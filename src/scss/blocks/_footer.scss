@@ -1,0 +1,14 @@
+.footer {
+	background-color: rgb(62, 62, 62);
+	padding: 50px 0;
+	font-size: 32px;
+    color: #fff;
+
+	h1 {
+		font-size: 32px;
+	}
+
+	@media (max-width: 1200px) {
+		font-size: 26px;
+	}
+}

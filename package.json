@@ -1,0 +1,39 @@
+{
+	"devDependencies": {
+		"@babel/core": "^7.22.5",
+		"@babel/preset-env": "^7.22.5",
+		"css-loader": "^6.8.1",
+		"gulp": "^4.0.2",
+		"gulp-autoprefixer": "^8.0.0",
+		"gulp-babel": "^8.0.0",
+		"gulp-changed": "^4.0.3",
+		"gulp-clean": "^0.4.0",
+		"gulp-csso": "^4.0.1",
+		"gulp-file-include": "^2.3.0",
+		"gulp-group-css-media-queries": "^1.2.2",
+		"gulp-htmlclean": "^2.7.22",
+		"gulp-imagemin": "^7.1.0",
+		"gulp-notify": "^4.0.0",
+		"gulp-plumber": "^1.2.1",
+		"gulp-sass": "^5.1.0",
+		"gulp-sass-glob": "^1.1.0",
+		"gulp-server-livereload": "^1.9.2",
+		"gulp-sourcemaps": "^3.0.0",
+		"gulp-webp": "^4.0.1",
+		"gulp-webp-css": "^1.1.0",
+		"gulp-webp-html": "^1.0.2",
+		"i": "^0.3.7",
+		"npm": "^9.7.2",
+		"sass": "^1.63.4",
+		"style-loader": "^3.3.3",
+		"webpack-stream": "^7.0.0"
+	},
+	"babel": {
+		"presets": [
+			"@babel/preset-env"
+		]
+	},
+	"browserslist": [
+		"last 5 versions"
+	]
+}

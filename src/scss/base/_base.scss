@@ -1,0 +1,14 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-main);
+		background-color: var(--white);
+}
+
+.container {
+  max-width: 1270px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
