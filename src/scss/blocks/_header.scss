@@ -1,10 +1,87 @@
 .header {
-	background-color: rgb(195, 220, 231);
-	padding: 50px 0;
+}
 
-	&__row {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
+.header__navigation {
+  padding-top: clamp(30px, 1.243rem + 3.16vw, 60px);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include desctop-s {
+    flex-direction: column;
+    row-gap: 40px;
+  }
+}
+
+.nav__logo {
+}
+
+.logo {
+}
+
+.header__content {
+  margin-top: clamp(40px, 1.868rem + 3.16vw, 70px);
+  display: grid;
+	grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    'title image'
+    'subtitle image'
+    'button image';
+  // column-gap: clamp(40px, 1.068rem + 7.16vw, 108px);
+
+  @include tablet {
+		text-align: center;
+		grid-template-columns: 1fr;
+    grid-template-areas:
+      'title'
+      'image'
+      'subtitle'
+      'button';
+  }
+
+	@include phone {
+		text-align: left;
 	}
+}
+
+.header__title {
+  // max-width: 531px;
+  font-size: clamp(43px, 2.33rem + 1.79vw, 60px);
+  font-weight: 500;
+  grid-area: title;
+  margin-bottom: 35px;
+}
+
+.header__subtitle {
+  // max-width: 531px;
+  font-size: clamp(16px, 0.916rem + 0.42vw, 20px);
+  line-height: 28px;
+  grid-area: subtitle;
+  margin-bottom: 35px;
+}
+
+.header__button {
+  // max-width: 531px;
+  grid-area: button;
+}
+
+.header__image {
+  align-self: stretch;
+  justify-self: end;
+  grid-area: image;
+
+  @include tablet {
+    justify-self: center;
+		max-height: 350px;
+  }
+
+	@include phone {
+		justify-self: start;
+	}
+}
+
+.header__brands {
 }

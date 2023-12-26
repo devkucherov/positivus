@@ -9,3 +9,21 @@
 	--accent-dark: #191A23;
 	--accent-gray: #F3F3F3;
 }
+
+@mixin desctop-s {
+	@media (max-width: 1120px) {
+    @content;
+  }
+} 
+
+@mixin tablet {
+	@media (max-width: 840px) {
+    @content;
+  }
+} 
+
+@mixin phone {
+	@media (max-width: 599px) {
+    @content;
+  }
+} 
