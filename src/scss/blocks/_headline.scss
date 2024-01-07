@@ -1,0 +1,31 @@
+.headline {
+  display: flex;
+  align-items: center;
+  gap: 30px 40px;
+
+  @include tablet {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.headline__title {
+  font-size: 40px;
+  font-weight: 500;
+  padding: 0px 7px;
+  border-radius: 7px;
+  background: var(--accent);
+
+  @include tablet {
+    font-size: clamp(36px, 2.166rem + 0.42vw, 40px);
+  }
+}
+
+.headline__description {
+  font-size: 18px;
+  text-wrap: balance;
+
+  @include tablet {
+    font-size: clamp(16px, 0.958rem + 0.21vw, 18px);
+  }
+}

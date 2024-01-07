@@ -58,7 +58,7 @@ gulp.task('html:docs', function () {
 		.pipe(changed('./docs/'))
 		.pipe(plumber(plumberNotify('HTML')))
 		.pipe(fileInclude(fileIncludeSetting))
-		.pipe(webpHTML())
+		// .pipe(webpHTML())
 		.pipe(htmlclean())
 		.pipe(gulp.dest('./docs/'));
 });
@@ -90,6 +90,7 @@ gulp.task('images:docs', function () {
 		.pipe(imagemin({ verbose: true }))
 		.pipe(gulp.dest('./docs/img/'));
 });
+
 
 gulp.task('fonts:docs', function () {
 	return gulp
