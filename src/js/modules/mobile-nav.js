@@ -1,14 +1,14 @@
-// function mobileNav() {
-// 	// Mobile nav button
-// 	const navBtn = document.querySelector('.mobile-nav-btn');
-// 	const nav = document.querySelector('.mobile-nav');
-// 	const menuIcon = document.querySelector('.nav-icon');
+function mobileNav() {
+  // Mobile nav button
+  let mobileNav = document.querySelector('.nav-list')
+  let mobileBtn = document.querySelector('.nav__burger')
+  let body = document.querySelector('.page')
 
-// 	navBtn.onclick = function () {
-// 		nav.classList.toggle('mobile-nav--open');
-// 		menuIcon.classList.toggle('nav-icon--active');
-// 		document.body.classList.toggle('no-scroll');
-// 	};
-// }
+  mobileBtn.addEventListener('click', function () {
+    mobileNav.classList.toggle('open')
+    mobileBtn.classList.toggle('open')
+    body.classList.toggle('stopscroll')
+  })
+}
 
-// export default mobileNav;
+export default mobileNav;

@@ -7,7 +7,57 @@
     flex-direction: column;
     row-gap: 40px;
   }
+
+  @include tablet {
+    flex-direction: row;
+  }
 }
 
-// .nav__logo {
-// }
+.nav__logo {
+  z-index: 1;
+  
+  @include phone {
+    max-width: clamp(144px, 7.4rem + 8vw, 220px);
+  }
+}
+
+.nav__burger {
+  display: none;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  z-index: 2;
+
+  @include tablet {
+    display: block;
+  }
+}
+
+.nav__burger span {
+  position: absolute;
+  background-color: var(--black);
+  width: 30px;
+  height: 3px;
+  left: 5px;
+  transition: transform 0.5s, opacity 0.5s, background-color 0.5s;
+}
+
+.nav__burger span:nth-child(1) {
+  transform: translateY(-10px);
+}
+
+.nav__burger span:nth-child(3) {
+  transform: translateY(10px);
+}
+
+.nav__burger.open span:nth-child(1) {
+  transform: translateY(0) rotate(45deg);
+}
+
+.nav__burger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav__burger.open span:nth-child(3) {
+  transform: translateY(0) rotate(-45deg);
+}
