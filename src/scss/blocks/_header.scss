@@ -1,31 +1,14 @@
-.header {
-}
+// .header {
+// }
 
 .header__navigation {
   padding-top: clamp(30px, 1.243rem + 3.16vw, 60px);
 }
 
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  @include desctop-s {
-    flex-direction: column;
-    row-gap: 40px;
-  }
-}
-
-.nav__logo {
-}
-
-.logo {
-}
-
 .header__content {
   margin-top: clamp(40px, 1.868rem + 3.16vw, 70px);
   display: grid;
-	grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-areas:
     'title image'
     'subtitle image'
@@ -33,8 +16,8 @@
   // column-gap: clamp(40px, 1.068rem + 7.16vw, 108px);
 
   @include tablet {
-		text-align: center;
-		grid-template-columns: 1fr;
+    text-align: center;
+    grid-template-columns: 1fr;
     grid-template-areas:
       'title'
       'image'
@@ -42,9 +25,9 @@
       'button';
   }
 
-	@include phone {
-		text-align: left;
-	}
+  @include phone {
+    text-align: left;
+  }
 }
 
 .header__title {
@@ -75,13 +58,74 @@
 
   @include tablet {
     justify-self: center;
-		max-height: 350px;
+    max-height: 350px;
   }
 
-	@include phone {
-		justify-self: start;
-	}
+  @include phone {
+    justify-self: start;
+  }
 }
 
 .header__brands {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: 20px;
+  margin-top: clamp(50px, 2.704rem + 2.11vw, 70px);
+
+  &::before,
+  &::after {
+    content: '';
+    height: 100%;
+    top: 0;
+    width: 10%;
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  &::before {
+    left: 0;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
+
+  &::after {
+    right: 0;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 1) 100%
+    );
+  }
+}
+
+.header__brands-wrap {
+  flex-shrink: 0;
+  display: flex;
+  gap: 20px;
+  counter-reset: item;
+  justify-content: space-around;
+  min-width: 100%;
+  mix-blend-mode: luminosity;
+}
+
+.marquee {
+  animation: scroll 15s linear infinite;
+}
+
+// .header__brand-img {
+// }
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 20px));
+  }
 }

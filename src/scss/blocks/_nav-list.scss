@@ -1,14 +1,15 @@
 .nav-list {
   display: flex;
   gap: 40px;
-
+  align-items: center;
+  min-height: 68px;
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
 }
 
-.nav-list__item {
-}
+// .nav-list__item {
+// }
 
 .nav-list__link {
   color: var(--black);

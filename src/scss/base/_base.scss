@@ -5,6 +5,7 @@ html {
 body {
   font-family: var(--font-main);
   background-color: var(--white);
+  margin-bottom: 100px;
 }
 
 .container {
@@ -31,5 +32,9 @@ body {
   &:hover {
     background-color: var(--white);
     color: var(--accent-dark);
+  }
+
+  @include phone {
+      width: 100%;
   }
 }

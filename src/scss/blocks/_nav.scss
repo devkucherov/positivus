@@ -1,0 +1,13 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include desctop-s {
+    flex-direction: column;
+    row-gap: 40px;
+  }
+}
+
+// .nav__logo {
+// }
