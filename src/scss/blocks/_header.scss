@@ -118,8 +118,9 @@
   animation: scroll 15s linear infinite;
 }
 
-// .header__brand-img {
-// }
+.header__brand-img {
+  mix-blend-mode: luminosity;
+}
 
 @keyframes scroll {
   from {
