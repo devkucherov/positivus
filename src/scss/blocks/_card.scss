@@ -35,10 +35,10 @@
 }
 
 .card__title {
-  display: grid;
   grid-area: title;
   font-size: clamp(24px, 1.374rem + 0.63vw, 30px);
   font-weight: 500;
+
 
   span {
     border-radius: 7px;
@@ -60,7 +60,6 @@
 }
 
 .card__link {
-  display: grid;
   grid-area: link;
   display: flex;
   align-items: center;
@@ -96,9 +95,7 @@
   }
 }
 
-
 .card__image {
-  display: grid;
   grid-area: image;
   align-self: center;
   justify-self: end;
