@@ -1,0 +1,64 @@
+.cto {
+}
+
+.cto__row {
+  margin-top: 100px;
+  border-radius: 45px;
+  background: var(--accent-gray);
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: -25px;
+    right: 135px;
+    width: 359px;
+    height: 394.269px;
+    background-image: url(./../img/cto-background.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @include desctop-s {
+      right: 20px;
+    }
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  @include tablet {
+    
+  }
+}
+
+.cto__content {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  max-width: 500px;
+  padding: 60px;
+
+  @include tablet {
+    margin: 0 auto;
+    padding: 30px;
+  }
+}
+
+.cto__title {
+  font-size: clamp(26px, 1.538rem + 0.43vw, 30px);
+  font-weight: 500;
+}
+
+.cto__description {
+  font-size: clamp(16px, 0.957rem + 0.22vw, 18px);
+  text-wrap: balance;
+
+  @include tablet {
+    line-height: 24px; 
+  }
+  
+}
+
+.cto__button {
+}

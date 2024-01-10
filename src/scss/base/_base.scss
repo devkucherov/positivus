@@ -30,7 +30,7 @@ body {
   transition: 0.3s;
 
   &:hover {
-    background-color: var(--white);
+    background-color: transparent;
     color: var(--accent-dark);
   }
 
