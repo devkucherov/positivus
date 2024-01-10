@@ -1,7 +1,13 @@
-.headline {
+// .headline {
+
+// }
+
+.headline__wrap {
   display: flex;
   align-items: center;
   gap: 30px 40px;
+  padding-top: clamp(60px, 2.066rem + 8.42vw, 140px);
+  padding-bottom: clamp(40px, 1.553rem + 4.74vw, 85px);
 
   @include tablet {
     flex-direction: column;
@@ -29,3 +35,6 @@
     font-size: clamp(16px, 0.958rem + 0.21vw, 18px);
   }
 }
+
+
+
