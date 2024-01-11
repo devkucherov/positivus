@@ -1,0 +1,22 @@
+// .team {
+// }
+
+// .team__headline {
+// }
+
+.team__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 4fr);
+  gap: 40px;
+
+  @include desctop-s {
+    grid-template-columns: repeat(2, 6fr);
+  }
+
+  @include tablet {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+

@@ -1,0 +1,57 @@
+.person {
+  border-radius: 45px;
+  border: 1px solid var(--black);
+  box-shadow: 0px 5px 0px 0px var(--black);
+}
+
+.person__content {
+  padding: 40px 35px;
+
+  @include phone {
+    padding: 30px 25px;
+  }
+}
+
+.person__row {
+  position: relative;
+  display: flex;
+  gap: 20px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--black);
+
+
+}
+
+// .person__avatar {
+// }
+
+.person__name {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  font-size: clamp(18px, 1.082rem + 0.22vw, 20px);
+  font-weight: 500;
+}
+
+.person__position {
+  font-size: clamp(14px, 0.788rem + 0.43vw, 18px);
+  font-weight: 400;
+}
+
+.person__link {
+  position: absolute;
+  right: 0;
+}
+
+// .person__linkedin {
+// }
+
+.person__description {
+  padding-top: 28px;
+  font-size: clamp(16px, 1.082rem + 0.22vw, 18px);
+  font-weight: 400;
+
+  @include tablet {
+    line-height: 24px;
+  }
+}

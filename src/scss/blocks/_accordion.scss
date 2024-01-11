@@ -12,6 +12,8 @@
   }
 }
 
+
+
 .accordion__header {
   display: flex;
   align-items: center;
@@ -48,6 +50,11 @@
 
   &::marker {
     display: none;
+  }
+
+  &:focus {
+    outline: 0;
+    box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.2), inset 0 0 2px rgba(0, 0, 0, 0.2);
   }
 }
 
@@ -95,7 +102,3 @@
   padding-top: 30px;
 }
 
-.accordion__header:focus {
-  outline: 0;
-  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.3), inset 0 0 2px rgba(0, 0, 0, 0.3);
-}
