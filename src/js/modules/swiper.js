@@ -8,18 +8,41 @@ import 'swiper/css/bundle';
 export const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
-  loop: true,
+  slidesPerView: 1,
+  centeredSlides: true,
+  spaceBetween: 50,
+
+  // freeMode: true,
 
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
+    clickable: true,
   },
 
   // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '#sliderNext',
+    prevEl: '#sliderPrev',
+  },
+  keyboard: {
+    enabled: true,
   },
 
+  breakpoints: {
+    // 600: {
+    //   slidesPerView: 1,
+    //   centeredSlides: true,
+    //   spaceBetween: 50,
+    // },
+    841: {
+      slidesPerView: 2,
+      centeredSlides: true,
+    },
+    // 1230: {
+    //   slidesPerView: 2,
+    //   centeredSlides: true,
+    // },
+  },
 });
 

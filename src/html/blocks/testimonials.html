@@ -10,30 +10,62 @@
     </div>
 
     <div class="testimonials__slider">
-     
-      <div class="slider">
-        <div class="slider__review">
-          <div class="slider__bubble">
-            <div class="slider__bubble-in">
-              "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."
+
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="slider__review">
+              <div class="slider__bubble">
+                <div class="slider__bubble-in">
+                  "The ability to speak does not make you intelligent."
+                </div>
+              </div>
+              <div class="slider__author">
+                <p class="slider__author-name">Qui-Gon Jinn</p>
+                <p class="slider__author-desc">Jedi Master</p>
+              </div>
             </div>
           </div>
-          <div class="slider__author">
-            <p class="slider__author-name">John Smith</p>
-            <p class="slider__author-desc">Marketing Director at XYZ Corp</p>
+          <div class="swiper-slide">
+            <div class="slider__review">
+              <div class="slider__bubble">
+                <div class="slider__bubble-in">
+                  "You underestimate the power of the Dark Side."
+                </div>
+              </div>
+              <div class="slider__author">
+                <p class="slider__author-name">Darth Vader</p>
+                <p class="slider__author-desc">Sith Lord</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slider__review">
+              <div class="slider__bubble">
+                <div class="slider__bubble-in">
+                  "If more people valued home above gold this world would be a merrier place."
+                </div>
+              </div>
+              <div class="slider__author">
+                <p class="slider__author-name">Thorin Oakenshield</p>
+                <p class="slider__author-desc">King of the Blue Mountains dwarves</p>
+              </div>
+            </div>
           </div>
 
         </div>
 
         <div class="slider__button-group">
           <button id="sliderPrev" class="slider__btn slider__btn--prev">
-            <img src="./img/arrow-left.svg" alt="Previous">
+            <img class="slider__btn-img" src="./img/arrow-left.svg" alt="Previous">
           </button>
-          <button id="sliderNext" class="slider__btn slider__btn--next">
-            <img src="./img/arrow-right.svg" alt="Next">
+          <div class="swiper-pagination"></div> 
+          <button type="button" id="sliderNext" class="slider__btn slider__btn--next">
+            <img class="slider__btn-img" src="./img/arrow-right.svg" alt="Next">
           </button>
         </div>
-
 
       </div>
 
