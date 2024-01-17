@@ -1,0 +1,126 @@
+.swiper {
+  width: 100%;
+}
+
+.slider__review {
+  color: var(--white);
+  padding: 0 20px;
+
+  @include tablet {
+    display: grid;
+    justify-items: center;
+  }
+}
+
+.slider__bubble {
+  max-width: 500px;
+  height: 200px;
+  padding: 48px 52px;
+  border-radius: 45px;
+  border: 1px solid var(--accent);
+  position: relative;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  &::after {
+    content: '';
+    width: 40px;
+    height: 40px;
+    border-left: 1px solid var(--accent);
+    border-bottom: 1px solid var(--accent);
+    position: absolute;
+    bottom: -21px;
+    left: 75px;
+    background-color: var(--black);
+    transform: rotate(-45deg);
+  }
+
+  @include phone {
+    padding: 25px;
+  }
+}
+
+// .slider__bubble-in {
+// }
+
+.slider__author {
+  max-width: 526px;
+  margin-left: 90px;
+  padding-top: 20px;
+
+  @include tablet {
+    margin-right: 190px;
+    margin-left: 0;
+  }
+
+  @include phone {
+    margin-right: 0;
+    margin-left: 10%;
+    justify-self: start;
+  }
+}
+
+.slider__author-name {
+  color: var(--accent);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.slider__author-desc {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.slider__button-group {
+  margin-top: 100px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+
+  @include phone {
+    margin-top: 50px;
+    gap: 50px;
+  }
+}
+
+// .slider__btn {
+// }
+
+// .slider__btn--prev {
+// }
+
+// .slider__btn--next {
+// }
+
+.slider__btn-img {
+  width: 24px;
+  height: 24px;
+}
+
+.swiper-pagination {
+  position: relative !important;
+}
+
+.swiper-pagination-horizontal {
+  width: 66px !important;
+  top: 0 !important;
+}
+
+.swiper-pagination-bullet {
+  background-color: transparent !important;
+  background-image: url(./../img/slider-pagination.svg) !important;
+  width: 14px !important;
+  height: 14px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-image: url(./../img/slider-pagination-active.svg) !important;
+}
+
+.slider__btn.swiper-button-disabled {
+  opacity: 0.35;
+}

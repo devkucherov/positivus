@@ -38,3 +38,76 @@ body {
       width: 100%;
   }
 }
+
+.input {
+  padding: 18px 30px;
+  border-radius: 14px;
+  border: 1px solid var(--black);
+  background: #fff;
+
+  &:focus {
+    box-shadow: 0 0 0 0.2rem rgb(185, 255, 102);
+  }
+
+  &:hover {
+    border-color: var(--accent);
+  }
+}
+
+.label-input {
+  pointer-events: none;
+}
+
+/* для элемента input c type="radio" */
+.custom-radio {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+/* для элемента label связанного с .custom-radio */
+.custom-radio+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+/* создание в label псевдоэлемента  before со следующими стилями */
+.custom-radio+label::before {
+  content: '';
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid var(--black);
+  border-radius: 50%;
+  margin-right: 15px;
+  background-color: var(--white);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+/* стили при наведении курсора на радио */
+.custom-radio:not(:disabled):not(:checked)+label:hover::before {
+  border-color: var(--accent);
+}
+/* стили для активной радиокнопки (при нажатии на неё) */
+// .custom-radio:not(:disabled):active+label::before {
+//   background-color: #b3d7ff;
+//   border-color: #b3d7ff;
+// }
+/* стили для радиокнопки, находящейся в фокусе */
+.custom-radio:focus+label::before {
+  box-shadow: 0 0 0 0.2rem rgb(185, 255, 102);
+}
+/* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
+// .custom-radio:focus:not(:checked)+label::before {
+//   box-shadow: 0 0 0 0.2rem rgb(185, 255, 102);
+// }
+/* стили для радиокнопки, находящейся в состоянии checked */
+.custom-radio:checked+label::before {
+  background-image: url(./../img/radio-dot.svg);
+}
+/* стили для радиокнопки, находящейся в состоянии disabled */
+// .custom-radio:disabled+label::before {
+//   background-color: #e9ecef;
+// }

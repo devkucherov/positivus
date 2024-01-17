@@ -8,7 +8,7 @@
 		<link rel="stylesheet" href="./css/main.css" />
 	</head>
 	<body class="page">
-		<header class="header">
+		<header class="header none">
     <div class="container">
         <div class="header__navigation">
             <nav class="nav">
@@ -79,7 +79,7 @@
 
 
 
-		<section class="sercices">
+		<section class="sercices none">
   <div class="container">
     <div class="services__headline">
       <div class="headline">
@@ -178,7 +178,7 @@
     </div>
   </div>
 </section>
-		<section class="cto">
+		<section class="cto none">
   <div class="container">
     <div class="cto__row">
       <div class="cto__content">
@@ -195,7 +195,7 @@
     </div>
   </div>
 </section>
-		<section class="process">
+		<section class="process none">
   <div class="container">
     <div class="process__headline">
       <div class="headline">
@@ -254,7 +254,7 @@
 
   </div>
 </section>
-		<section class="team">
+		<section class="team none">
   <div class="container">
     <div class="team__headline">
       <div class="headline">
@@ -380,23 +380,24 @@
     </div>
   </div>
 </section>
-		<section class="testimonials">
+		<section class="testimonials none">
   <div class="container">
     <div class="testimonials__headline">
       <div class="headline">
         <div class="headline__wrap">
           <h2 class="headline__title">Testimonials</h2>
-          <p class="headline__description">Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about Our Digital Marketing Services</p>
+          <p class="headline__description">
+            Hear from Our Satisfied Clients: Read Our Testimonials to Learn More
+            about Our Digital Marketing Services
+          </p>
         </div>
       </div>
     </div>
 
     <div class="testimonials__slider">
-
       <div class="swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
+
+        <div class="slider swiper-wrapper">
           <div class="swiper-slide">
             <div class="slider__review">
               <div class="slider__bubble">
@@ -427,30 +428,92 @@
             <div class="slider__review">
               <div class="slider__bubble">
                 <div class="slider__bubble-in">
-                  "If more people valued home above gold this world would be a merrier place."
+                  "If more people valued home above gold this world would be a
+                  merrier place."
                 </div>
               </div>
               <div class="slider__author">
                 <p class="slider__author-name">Thorin Oakenshield</p>
-                <p class="slider__author-desc">King of the Blue Mountains dwarves</p>
+                <p class="slider__author-desc">
+                  King of the Blue Mountains dwarves
+                </p>
               </div>
             </div>
           </div>
-
         </div>
 
         <div class="slider__button-group">
           <button id="sliderPrev" class="slider__btn slider__btn--prev">
-            <img class="slider__btn-img" src="./img/arrow-left.svg" alt="Previous">
+            <img
+              class="slider__btn-img"
+              src="./img/arrow-left.svg"
+              alt="Previous"
+            />
           </button>
-          <div class="swiper-pagination"></div> 
-          <button type="button" id="sliderNext" class="slider__btn slider__btn--next">
-            <img class="slider__btn-img" src="./img/arrow-right.svg" alt="Next">
+          <div class="swiper-pagination"></div>
+          <button
+            type="button"
+            id="sliderNext"
+            class="slider__btn slider__btn--next"
+          >
+            <img
+              class="slider__btn-img"
+              src="./img/arrow-right.svg"
+              alt="Next"
+            />
           </button>
         </div>
-
       </div>
+    </div>
+  </div>
+</section>
 
+		<section class="contact">
+  <div class="container">
+    <div class="contact__headline">
+      <div class="headline">
+        <div class="headline__wrap">
+          <h2 class="headline__title">Contact Us</h2>
+          <p class="headline__description">
+            Connect with Us: Let's Discuss Your Digital Marketing Needs
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact__form">
+
+      <form class="form" action="#" method="post" target="_blank">
+
+        <fieldset class="form__subject">
+          <div>
+            <input class="custom-radio" type="radio" name="subject" id="hi" value="say hi" checked>
+            <label for="hi">Say Hi</label>
+          </div>
+
+          <div>
+            <input class="custom-radio" type="radio" name="subject" id="quote" value="quote">
+            <label for="quote">Get a Quote</label>
+          </div>
+        </fieldset>
+
+        <fieldset class="form__info">
+
+          <label class="label-input" for="name">Name</label>
+          <input class="form__name input" type="text" name="name" placeholder="Name" id="name">
+
+          <label for="email">Email*</label>
+          <input class="form__email input" type="email" name="email" placeholder="Email" id="email" required>
+
+          <label for="message">Message*</label>
+          <textarea class="form__massage input" name="comment" placeholder="Message" id="message" required></textarea>
+
+        </fieldset>
+
+        <button class="form__button button" type="submit">Send Message</button>
+
+        </div>
+      </form>
     </div>
   </div>
 </section>
