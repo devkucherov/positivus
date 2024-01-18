@@ -16,6 +16,7 @@
 
 Верстка - [Павел Кучеров](https://t.me/topsykey) <br>
 Дизайн - [Ольга Аверченко](https://www.behance.net/averchenkoolga)
+<a href="https://t.me/topsykey" target="_blank">Павел кучеров</a>
 
 ## Начало работы
 
