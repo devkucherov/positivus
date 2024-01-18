@@ -14,7 +14,7 @@
 
 [Ссылка для просмотра](https://devkucherov.github.io/positivus/)
 
-Верстка - [Павел Кучеров](https://t.me/topsykey)
+Верстка - [Павел Кучеров](https://t.me/topsykey) <br>
 Дизайн - [Ольга Аверченко](https://www.behance.net/averchenkoolga)
 
 ## Начало работы
