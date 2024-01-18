@@ -8,7 +8,7 @@
 		<link rel="stylesheet" href="./css/main.css" />
 	</head>
 	<body class="page">
-		<header class="header none">
+		<header class="header">
     <div class="container">
         <div class="header__navigation">
             <nav class="nav">
@@ -79,7 +79,7 @@
 
 
 
-		<section class="sercices none">
+		<section class="sercices">
   <div class="container">
     <div class="services__headline">
       <div class="headline">
@@ -178,7 +178,7 @@
     </div>
   </div>
 </section>
-		<section class="cto none">
+		<section class="cto">
   <div class="container">
     <div class="cto__row">
       <div class="cto__content">
@@ -195,7 +195,7 @@
     </div>
   </div>
 </section>
-		<section class="process none">
+		<section class="process">
   <div class="container">
     <div class="process__headline">
       <div class="headline">
@@ -254,7 +254,7 @@
 
   </div>
 </section>
-		<section class="team none">
+		<section class="team">
   <div class="container">
     <div class="team__headline">
       <div class="headline">
@@ -380,7 +380,7 @@
     </div>
   </div>
 </section>
-		<section class="testimonials none">
+		<section class="testimonials">
   <div class="container">
     <div class="testimonials__headline">
       <div class="headline">
@@ -470,6 +470,7 @@
 
 		<section class="contact">
   <div class="container">
+    
     <div class="contact__headline">
       <div class="headline">
         <div class="headline__wrap">
@@ -499,15 +500,20 @@
 
         <fieldset class="form__info">
 
-          <label class="label-input" for="name">Name</label>
-          <input class="form__name input" type="text" name="name" placeholder="Name" id="name">
+          <div class="form__input-wrap">
+            <label class="label-input" for="name">Name</label>
+            <input class="form__name input" type="text" name="name" placeholder="Name" id="name">
+          </div>
 
-          <label for="email">Email*</label>
-          <input class="form__email input" type="email" name="email" placeholder="Email" id="email" required>
+          <div class="form__input-wrap">
+            <label for="email">Email*</label>
+            <input class="form__email input" type="email" name="email" placeholder="Email" id="email" required>
+          </div>
 
-          <label for="message">Message*</label>
-          <textarea class="form__massage input" name="comment" placeholder="Message" id="message" required></textarea>
-
+          <div class="form__input-wrap">
+            <label for="message">Message*</label>
+            <textarea class="form__massage input" name="comment" placeholder="Message" id="message" required></textarea>
+          </div>
         </fieldset>
 
         <button class="form__button button" type="submit">Send Message</button>
@@ -517,7 +523,64 @@
     </div>
   </div>
 </section>
-		
+		<footer class="footer">
+  <div class="container">
+    <div class="footer__wrap">
+      <div class="footer__top">
+        <div class="footer__logo">
+          <img src="./img/footer/footer-logo.svg" alt="Logo">
+        </div>
+        <nav class="footer__nav">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item">
+                <a href="#!" class="footer__nav-link">About us</a>
+            </li>
+            <li class="footer__nav-item">
+                <a href="#!" class="footer__nav-link">Services</a>
+            </li>
+            <li class="footer__nav-item">
+                <a href="#!" class="footer__nav-link">Use Cases</a>
+            </li>
+            <li class="footer__nav-item">
+                <a href="#!" class="footer__nav-link">Pricing</a>
+            </li>
+            <li class="footer__nav-item">
+                <a href="#!" class="footer__nav-link">Blog</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer__socials">
+          <a class="footer__socials-link" href="#!">
+            <img src="./img/footer/linkedin-icon.svg" alt="LinkedIn">
+          </a>
+          <a class="footer__socials-link" href="#!">
+            <img src="./img/footer/facebook-icon.svg" alt="Facebook">
+          </a>
+          <a class="footer__socials-link" href="#!">
+            <img src="./img/footer/twitter-icon.svg" alt="Twitter">
+          </a>
+        </div>
+        <div class="footer__contact">
+          <p class="footer__contact-title">Contact us:</p>
+          <p class="footer__email">Email: <a class="footer__contact-link" href="mailto:info@positivus.com">info@positivus.com</a></p>
+          <p class="footer__phone">Phone: <a class="footer__contact-link" href="tel:555-567-8901">555-567-8901</a></p>
+          <p class="footer__adress">Address: 1234 Main St <br>
+            Moonstone City, Stardust State 12345</p>
+        </div>
+        <div class="foooter__subscribe">
+          <form class="footer__form" action="#" method="post" target="_blank">
+            <input class="footer__input" type="email" placeholder="Email" id="footerEmail" required>
+            <button class="footer__button" type="submit">Subscribe to news</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2023 Positivus. All Rights Reserved.</p>
+        <a href="#!" class="footer__privacy">Privacy Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
 
 		<script src="./js/index.bundle.js"></script>
 	</body>

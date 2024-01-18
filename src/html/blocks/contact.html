@@ -1,5 +1,6 @@
 <section class="contact">
   <div class="container">
+    
     <div class="contact__headline">
       <div class="headline">
         <div class="headline__wrap">
@@ -29,15 +30,20 @@
 
         <fieldset class="form__info">
 
-          <label class="label-input" for="name">Name</label>
-          <input class="form__name input" type="text" name="name" placeholder="Name" id="name">
+          <div class="form__input-wrap">
+            <label class="label-input" for="name">Name</label>
+            <input class="form__name input" type="text" name="name" placeholder="Name" id="name">
+          </div>
 
-          <label for="email">Email*</label>
-          <input class="form__email input" type="email" name="email" placeholder="Email" id="email" required>
+          <div class="form__input-wrap">
+            <label for="email">Email*</label>
+            <input class="form__email input" type="email" name="email" placeholder="Email" id="email" required>
+          </div>
 
-          <label for="message">Message*</label>
-          <textarea class="form__massage input" name="comment" placeholder="Message" id="message" required></textarea>
-
+          <div class="form__input-wrap">
+            <label for="message">Message*</label>
+            <textarea class="form__massage input" name="comment" placeholder="Message" id="message" required></textarea>
+          </div>
         </fieldset>
 
         <button class="form__button button" type="submit">Send Message</button>
