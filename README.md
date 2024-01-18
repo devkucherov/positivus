@@ -1,5 +1,4 @@
 # Positivus
-<h1 style="background-сolor: #B9FF66">Positivus</h1>
 
 ## Cтраница для агентств цифрового маркетинга
 
