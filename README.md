@@ -1,4 +1,5 @@
 # Positivus
+<h1 style="сolor: #B9FF66">Positivus</h1>
 
 ## Cтраница для агентств цифрового маркетинга
 
@@ -16,7 +17,6 @@
 
 Верстка - [Павел Кучеров](https://t.me/topsykey) <br>
 Дизайн - [Ольга Аверченко](https://www.behance.net/averchenkoolga)
-<a href="https://t.me/topsykey" target="_blank">Павел кучеров</a>
 
 ## Начало работы
 
